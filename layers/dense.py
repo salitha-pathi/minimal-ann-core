@@ -1,5 +1,5 @@
 import cupy as cp
-from layer import Layer
+from .layer import Layer
 
 
 class Dense(Layer):

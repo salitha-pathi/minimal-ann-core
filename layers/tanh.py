@@ -1,5 +1,5 @@
 import cupy as cp
-from activation import Activation
+from .activation import Activation
 
 
 class TanH(Activation):
