@@ -1,9 +1,9 @@
-from matplotlib import pyplot as plt
-from dense import Dense
-from losses import mse, mse_prime
-from network import predict, train
-from tanh import TanH
 import cupy as cp
+from matplotlib import pyplot as plt
+from layers.dense import Dense
+from losses.mse import mse, mse_prime
+from layers.tanh import TanH
+from network.network import predict, train
 
 
 network = [
