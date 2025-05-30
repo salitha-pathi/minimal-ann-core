@@ -1,9 +1,9 @@
-import cupy as np
+import cupy as cp
 
 
 def mse(y, y_pred):
-    return np.mean(np.power(y - y_pred, 2))
+    return cp.mean(cp.power(y - y_pred, 2))
 
 
 def mse_prime(y, y_pred):
-    return 2 * (y_pred - y) / np.size(y)
+    return 2 * (y_pred - y) / cp.size(y)
